@@ -21,7 +21,7 @@ npm install
 GLM_API_KEY=your_glm_api_key_here
 ```
 
-GLM API キーは BigModel コンソールで取得してください。
+GLM API キーは [text](https://z.ai/subscribe?_channel_track_key=bFOzJZF1&gad_source=1&gad_campaignid=23473939863&gbraid=0AAAABCK8KLx7x48RX9SyeywYho4tEz7JG&gclid=Cj0KCQjwpv7NBhCzARIsADkIfWwj5zV91YDPt5Xw9VSEO1Hft0aXUFhD5MZoH0qTc666T0xCx71WvmUaAh4PEALw_wcB) で取得してください。
 
 ### 3. 開発サーバーの起動
 
