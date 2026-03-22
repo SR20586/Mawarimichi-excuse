@@ -21,7 +21,7 @@ npm install
 GLM_API_KEY=your_glm_api_key_here
 ```
 
-GLM API キーは BigModel コンソールで取得してください。
+GLM API キーは [Z ai](https://z.ai/subscribe?_channel_track_key=bFOzJZF1&gad_source=1&gad_campaignid=23473939863&gbraid=0AAAABCK8KLx7x48RX9SyeywYho4tEz7JG&gclid=Cj0KCQjwpv7NBhCzARIsADkIfWwj5zV91YDPt5Xw9VSEO1Hft0aXUFhD5MZoH0qTc666T0xCx71WvmUaAh4PEALw_wcB) で取得してください。
 
 ### 3. 開発サーバーの起動
 
@@ -30,6 +30,38 @@ npm run dev
 ```
 
 [http://localhost:3000](http://localhost:3000) を開いてアプリを使用できます。
+
+## Vercelでデプロイする方法（ローカル設定以外）
+
+### 方法A: Vercelダッシュボードからデプロイ
+
+1. GitHub にこのリポジトリを push する
+2. Vercel にログインして「Add New... > Project」を開く
+3. 対象リポジトリを Import する
+4. Framework Preset は Next.js のままで進める
+5. Project Settings > Environment Variables で以下を設定する
+	- Name: GLM_API_KEY
+	- Value: 発行した API キー
+	- Environment: Production（必要に応じて Preview / Development も追加）
+6. Deploy を実行する
+
+環境変数を追加・変更した場合は、再デプロイしてください。
+
+### 方法B: Vercel CLI からデプロイ
+
+```bash
+npm i -g vercel
+vercel login
+vercel link
+vercel env add GLM_API_KEY production
+vercel --prod
+```
+
+Preview 環境にも設定する場合は以下を実行します。
+
+```bash
+vercel env add GLM_API_KEY preview
+```
 
 ## 技術スタック
 

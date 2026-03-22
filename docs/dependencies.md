@@ -17,6 +17,7 @@
 - Provider: BigModel (ZhipuAI)
 - Endpoint: OpenAI互換 Chat Completions
 - Model: glm-4.7-flash
+- Thinking mode: disabled（応答遅延を避けるため `thinking: { type: "disabled" }` を指定）
 - Env var: GLM_API_KEY
 
 ## バージョン管理方針
