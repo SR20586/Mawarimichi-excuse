@@ -58,6 +58,9 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         model: "glm-4.7-flash",
+        thinking: {
+          type: "disabled",
+        },
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
           { role: "user", content: userPrompt },
